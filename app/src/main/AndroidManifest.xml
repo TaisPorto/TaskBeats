@@ -13,11 +13,11 @@
         android:theme="@style/Theme.TaskBeats"
         tools:targetApi="31">
         <activity
-            android:name=".TaskDetailActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".presentation.TaskDetailActivity"
+            android:parentActivityName=".presentation.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true"
             tools:ignore="ExtraText">
             <intent-filter>
