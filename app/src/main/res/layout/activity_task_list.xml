@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_task" />
+
+    <!-- Button Floating-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_task_list"
+        app:layout_constraintVertical_bias="0.998"
+        app:tint="@color/white"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <LinearLayout
+
+        android:id="@+id/ctn_content"
+        android:layout_width="10dp"
+        android:layout_height="2dp"
+        android:layout_margin="24dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="90dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center_horizontal"
+            android:text="Adicione uma tarefa"
+            android:textColor="@color/brown_900"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ilustracao1"
+            tools:ignore="ContentDescription" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
