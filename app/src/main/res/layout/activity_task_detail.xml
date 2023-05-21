@@ -4,7 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+<<<<<<< HEAD
     tools:context=".TaskDetailActivity">
+=======
+<<<<<<< HEAD
+    tools:context=".TaskDetailActivity">
+=======
+    tools:context=".presentation.TaskDetailActivity">
+>>>>>>> 96ef30c (Initial commit)
+>>>>>>> a9bcb55 (Initial commit)
 
     <include layout="@layout/toolbar"/>
 
